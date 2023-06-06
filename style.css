@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+}
+
+.Lcontent{
+    width: 30%;
+}
+.infor{
+    margin: 10px 0;
+}
+.btn{
+    padding: 5px 10px;
+    margin: 10px 15px;
+}
+.text-infor{
+    padding: 5px 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+.Rcontent{
+    margin-left: 30px;
+    width: 70%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr > th,
+table tr > td{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.Tcontent {
+    display: flex;
+    padding-bottom: 30px;
+    
+}
+.search {
+    width: 50%;
+
+}
+.Tcontent input {
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+}
+.arrange {
+    width: 50%;
+    padding-left: 30px;
+}
+.arrange select {
+    padding: 10px 15px;
+    width: 70%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Lcontent">
+            <div class="infor">
+                <label for="">Mã Sách</label>
+                <input type="text" class="text-infor" id="bookId">
+            </div>
+            <div class="infor">
+                <label for="">Ten Sách</label>
+                <input type="text" class="text-infor" id="bookName">
+            </div>
+            <div class="infor">
+                <label for="">Don Gia</label>
+                <input type="number" class="text-infor" id="price">
+            </div>
+            <div class="infor">
+                <label for="">Tac Gia</label>
+                <input type="text" class="text-infor" id="author">
+            </div>
+            <div class="infor">
+                <label for="">Trang Thai</label>
+                <input type="checkbox" name="" id="bookStatus">Con Hang
+            </div>
+            <div>
+                <button class="btn btn-add" onclick="addNewBook()">Them Moi</button>
+                <button class="btn btn-save" onclick="saveBook()">Luu</button>
+            </div>
+        </div>
+        <div class="Rcontent">
+            <div class="Tcontent">
+                <div class="search">
+                    <input type="text" name="" id="search" placeholder="Tìm kiếm tên sách" onkeyup="searchBook(event)">
+                </div>
+                <div class="arrange">
+                    <select name="" id="" onchange="sorted(event)">
+                        <option value="">Mặc Định</option>
+                        <option value="upPrice">Theo giá tăng dần</option>
+                        <option value="downPrice">Theo giá giảm dần</option>
+                    </select>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ma Sach</th>
+                        <th>Ten Sach</th>
+                        <th>Don Gia</th>
+                        <th>Tac Gia</th>
+                        <th>Trang Thai</th>
+                        <th>Hanh Dong</th>
+                    </tr>
+                </thead>
+                <tbody id="list">
+                    <tr>
+                        <td>B01</td>
+                        <td>Lap Trinh Css</td>
+                        <td>50,000VND</td>
+                        <td>Some One</td>
+                        <td>Con Hang</td>
+                        <td>
+                            <button class="btn btn-change">Sua</button>
+                            <button class="btn btn-delete">Xoa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
